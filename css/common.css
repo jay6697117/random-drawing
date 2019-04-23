@@ -1,0 +1,55 @@
+/* 清除默认内外边距 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 默认盒模型box-sizing都设置成border-box */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 去除 ul ol 里面的li标签的默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 设置 display: block, 因为默认的inline-block 会在元素的底部创建不需要的空格 */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 设置背景 */
+body {
+  background-color: #f1f1f1;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  /* 设置伪元素的内容为空 */
+  content: '';
+  /* 伪元素的高度为0 */
+  height: 0;
+  /* 伪元素的行高为0 */
+  line-height: 0;
+  /* 伪元素以块级元素显示并占满剩余空间 */
+  display: block;
+  /* 将伪元素隐藏 */
+  visibility: hidden;
+  /* 清除左右两边浮动 */
+  clear: both;
+}
+.clearfix {
+  /*兼容IE6-IE7*/
+  *zoom: 1;
+}

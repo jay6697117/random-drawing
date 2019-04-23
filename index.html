@@ -3,62 +3,18 @@
   <head>
     <title>简易抽奖页面</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <!-- <meta
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    /> -->
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
     <link rel="shortcut icon" href="https://www.jianshu.com/favicon.ico" type="image/x-icon" />
-    <style type="text/css">
-      /* 清除默认内外边距 */
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      /* 去除 ul ol 里面的li标签的默认样式 */
-      ul,
-      ol {
-        list-style: none;
-      }
-      /* 设置 display: block, 因为默认的inline-block 会在元素的底部创建不需要的空格 */
-      img {
-        max-width: 100%;
-        display: block;
-      }
-      /* 设置背景 */
-      body {
-        background-color: #f1f1f1;
-      }
-
-      .box {
-        width: 600px;
-        height: 600px;
-        margin: 0 auto;
-        margin-top: 100px;
-        border: 1px solid orange;
-        background-color: #fff;
-      }
-      .goods li {
-        width: 200px;
-        height: 200px;
-        float: left;
-        box-sizing: border-box;
-      }
-      .goods li img {
-        width: 100%;
-        height: 100%;
-      }
-      .current {
-        border: 1px solid orange;
-      }
-      #begin img {
-        border-radius: 50%;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="box">
-      <ul class="goods">
+      <ul class="goods clearfix">
         <li><img src="" /></li>
         <li class="current"><img src="" /></li>
         <li><img src="" /></li>
