@@ -1,9 +1,6 @@
 .box {
-  width: calc(90vw + 2px);
-  height: calc(90vw + 2px);
-  /* 水平居中 */
+  /* 盒子水平居中 */
   margin: 0 auto;
-  margin-top: 5vh;
   border: 1px solid orange;
   background-color: #fff;
 }
@@ -14,8 +11,6 @@
 }
 
 .goods li {
-  width: 30vw;
-  height: 30vw;
   float: left;
 }
 
@@ -32,39 +27,174 @@
   border-radius: 50%;
 }
 
-/* 媒体查询: 优先适配移动端*/
-@media screen and (min-width: 450px) and (max-width: 750px) {
+/* 竖屏 */
+/*==========  Mobile First Method  ==========*/
+/* 特殊情况: 设备宽度小于等于320px*/
+@media only screen and (max-width: 320px) and (orientation: portrait) {
   .box {
-    width: calc(75vw + 2px);
-    height: calc(75vw + 2px);
+    width: calc(96vw + 2px);
+    height: calc(96vw + 2px);
+    margin-top: calc(2vw - 1px);
   }
 
   .goods li {
-    width: 25vw;
-    height: 25vw;
+    width: 32vw;
+    height: 32vw;
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+/* Custom, iPhone Retina 设备宽度大于等于320px*/
+@media only screen and (min-width: 320px) and (orientation: portrait) {
   .box {
-    width: calc(60vw + 2px);
-    height: calc(60vw + 2px);
+    width: calc(90vw + 2px);
+    height: calc(90vw + 2px);
+    margin-top: calc(5vw - 1px);
   }
 
   .goods li {
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* Extra Small Devices, Phones 设备宽度大于等于480px*/
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+  .box {
+    width: calc(84vw + 2px);
+    height: calc(84vw + 2px);
+    margin-top: calc(8vw - 1px);
+  }
+
+  .goods li {
+    width: 28vw;
+    height: 28vw;
+  }
+}
+
+/* Small Devices, Tablets 设备宽度大于等于768px*/
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .box {
+    width: calc(57vw + 2px);
+    height: calc(57vw + 2px);
+    margin-top: calc(5vw - 1px);
+  }
+
+  .goods li {
+    width: 19vw;
+    height: 19vw;
+  }
+}
+
+/* Medium Devices, Desktops 设备宽度大于等于992px*/
+@media only screen and (min-width: 992px) and (orientation: portrait) {
+  .box {
+    width: calc(48vw + 2px);
+    height: calc(48vw + 2px);
+    margin-top: calc(6vw - 1px);
+  }
+
+  .goods li {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+/* Large Devices, Wide Screens 设备宽度大于等于1200px*/
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
   .box {
     width: calc(45vw + 2px);
     height: calc(45vw + 2px);
+    margin-top: calc(7vw - 1px);
   }
 
   .goods li {
     width: 15vw;
     height: 15vw;
+  }
+}
+
+/* 横屏 */
+/*==========  Mobile First Method  ==========*/
+/* 特殊情况: 设备高度小于等于320px*/
+@media only screen and (max-height: 320px) and (orientation: landscape) {
+  .box {
+    width: calc(96vh + 2px);
+    height: calc(96vh + 2px);
+    margin-top: calc(2vh - 1px);
+  }
+
+  .goods li {
+    width: 32vh;
+    height: 32vh;
+  }
+}
+
+/* Custom, iPhone Retina 设备高度大于等于320px*/
+@media only screen and (min-height: 320px) and (orientation: landscape) {
+  .box {
+    width: calc(90vh + 2px);
+    height: calc(90vh + 2px);
+    margin-top: calc(5vh - 1px);
+  }
+
+  .goods li {
+    width: 30vh;
+    height: 30vh;
+  }
+}
+
+/* Extra Small Devices, Phones 设备高度大于等于480px*/
+@media only screen and (min-height: 480px) and (orientation: landscape) {
+  .box {
+    width: calc(84vh + 2px);
+    height: calc(84vh + 2px);
+    margin-top: calc(8vh - 1px);
+  }
+
+  .goods li {
+    width: 28vh;
+    height: 28vh;
+  }
+}
+
+/* Small Devices, Tablets 设备高度大于等于768px*/
+@media only screen and (min-height: 768px) and (orientation: landscape) {
+  .box {
+    width: calc(57vh + 2px);
+    height: calc(57vh + 2px);
+    margin-top: calc(5vh - 1px);
+  }
+
+  .goods li {
+    width: 19vh;
+    height: 19vh;
+  }
+}
+
+/* Medium Devices, Desktops 设备高度大于等于992px*/
+@media only screen and (min-height: 992px) and (orientation: landscape) {
+  .box {
+    width: calc(48vh + 2px);
+    height: calc(48vh + 2px);
+    margin-top: calc(6vh - 1px);
+  }
+
+  .goods li {
+    width: 16vh;
+    height: 16vh;
+  }
+}
+
+/* Large Devices, Wide Screens 设备高度大于等于1200px*/
+@media only screen and (min-height: 1200px) and (orientation: landscape) {
+  .box {
+    width: calc(45vh + 2px);
+    height: calc(45vh + 2px);
+    margin-top: calc(7vh - 1px);
+  }
+
+  .goods li {
+    width: 15vh;
+    height: 15vh;
   }
 }
