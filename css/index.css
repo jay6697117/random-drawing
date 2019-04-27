@@ -1,3 +1,4 @@
+@charset "utf-8";
 .box {
   /* 盒子水平居中 */
   margin: 0 auto;
@@ -71,12 +72,12 @@
   }
 }
 
-/* Small Devices, Tablets 设备宽度大于等于768px*/
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+/* Small Devices, Tablets 设备宽度大于等于769px*/
+@media only screen and (min-width: 769px) and (orientation: portrait) {
   .box {
     width: calc(57vw + 2px);
     height: calc(57vw + 2px);
-    margin-top: calc(5vw - 1px);
+    margin-top: calc(8vw - 1px);
   }
 
   .goods li {
@@ -90,7 +91,7 @@
   .box {
     width: calc(48vw + 2px);
     height: calc(48vw + 2px);
-    margin-top: calc(6vw - 1px);
+    margin-top: calc(8vw - 1px);
   }
 
   .goods li {
@@ -104,7 +105,7 @@
   .box {
     width: calc(45vw + 2px);
     height: calc(45vw + 2px);
-    margin-top: calc(7vw - 1px);
+    margin-top: calc(8vw - 1px);
   }
 
   .goods li {
@@ -157,12 +158,12 @@
   }
 }
 
-/* Small Devices, Tablets 设备高度大于等于768px*/
-@media only screen and (min-height: 768px) and (orientation: landscape) {
+/* Small Devices, Tablets 设备高度大于等于769px*/
+@media only screen and (min-height: 769px) and (orientation: landscape) {
   .box {
     width: calc(57vh + 2px);
     height: calc(57vh + 2px);
-    margin-top: calc(5vh - 1px);
+    margin-top: calc(8vh - 1px);
   }
 
   .goods li {
@@ -176,7 +177,7 @@
   .box {
     width: calc(48vh + 2px);
     height: calc(48vh + 2px);
-    margin-top: calc(6vh - 1px);
+    margin-top: calc(8vh - 1px);
   }
 
   .goods li {
@@ -190,7 +191,7 @@
   .box {
     width: calc(45vh + 2px);
     height: calc(45vh + 2px);
-    margin-top: calc(7vh - 1px);
+    margin-top: calc(8vh - 1px);
   }
 
   .goods li {
